@@ -1,0 +1,278 @@
+@import url("../fontawesome-free-5.13.0-web/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Muli:ital,wght@0,300;1,300&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #eaeaea; }
+
+header {
+  background-image: url("../Images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto; }
+  header #menu__toggle {
+    opacity: 0; }
+  @media screen and (max-width: 570px) {
+    header {
+      justify-content: space-between;
+      padding: 28px; } }
+  @media screen and (max-width: 570px) {
+    header .header__logo a {
+      padding: 0; }
+    header .header__logo img {
+      width: 70% !important; } }
+  header .header__navbar .navbar__list {
+    margin-top: 35px; }
+    @media screen and (max-width: 570px) {
+      header .header__navbar .navbar__list {
+        margin-top: 0; } }
+    header .header__navbar .navbar__list .navbar__item {
+      display: inline-block;
+      position: relative;
+      margin-left: 30px; }
+      header .header__navbar .navbar__list .navbar__item a {
+        color: #FFFFFF;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif; }
+      header .header__navbar .navbar__list .navbar__item a:after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        top: 30px;
+        left: 1px;
+        background-color: #e64c65;
+        border: none;
+        transition: 0.3s; }
+    header .header__navbar .navbar__list .navbar__item:hover a:after {
+      width: 100%; }
+      @media screen and (max-width: 1025px) {
+        header .header__navbar .navbar__list .navbar__item:hover a:after {
+          width: 0; } }
+  @media screen and (max-width: 570px) {
+    header #menu__toggle:checked ~ .menu__btn > .burger {
+      transform: rotate(45deg); }
+    header #menu__toggle:checked ~ .menu__btn > .burger::before {
+      top: 0;
+      transform: rotate(0); }
+    header #menu__toggle:checked ~ .menu__btn > .burger::after {
+      top: 0;
+      transform: rotate(90deg); }
+    header #menu__toggle:checked ~ .navbar__list {
+      visibility: visible;
+      right: 0; }
+    header .menu__btn {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 46px;
+      right: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 11; }
+    header .menu__btn > .burger,
+    header .menu__btn > .burger::before,
+    header .menu__btn > .burger::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #FFFFFF;
+      transition-duration: .25s; }
+    header .menu__btn > .burger::before {
+      content: '';
+      top: -8px; }
+    header .menu__btn > .burger::after {
+      content: '';
+      top: 8px; }
+    header .navbar__list {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      right: 100%;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 80px 14px;
+      list-style: none;
+      background-color: rgba(91, 0, 141, 0.8);
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+      transition-duration: .25s; }
+    header a {
+      display: block;
+      padding: 12px 24px;
+      color: #333;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition-duration: .25s; }
+    header a:hover {
+      background-color: #CFD8DC; } }
+
+footer {
+  background-color: #1f253d;
+  padding: 40px 0; }
+  footer .footer__container {
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 570px) {
+      footer .footer__container {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center; } }
+    footer .footer__container .container__title h3 {
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      opacity: 70%; }
+    @media screen and (max-width: 590px) {
+      footer .footer__container .container__title {
+        margin-bottom: 20px;
+        margin-right: 40px; } }
+    @media screen and (max-width: 550px) {
+      footer .footer__container .container__title {
+        margin-right: 0; } }
+    footer .footer__container .container__link a {
+      color: #FFFFFF;
+      opacity: 70%;
+      outline: none;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 15px; }
+    @media screen and (max-width: 570px) {
+      footer .footer__container .container__link a:nth-child(1) {
+        margin-left: 0; } }
+    footer .footer__container .container__link a:nth-child(1):hover {
+      color: #4267B2;
+      opacity: 70%; }
+    footer .footer__container .container__link a:nth-child(2):hover {
+      color: #00a0d0;
+      opacity: 70%; }
+    footer .footer__container .container__link a:nth-child(3):hover {
+      color: #ea4c89;
+      opacity: 70%; }
+
+.about-us__section {
+  max-width: 900px;
+  margin: auto;
+  color: #1f253d;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px; }
+  @media screen and (max-width: 1025px) {
+    .about-us__section {
+      margin-top: 12%;
+      position: relative;
+      display: block;
+      padding: 0 10px; } }
+  @media screen and (max-height: 1370px) {
+    .about-us__section {
+      height: 100vh; } }
+  @media screen and (max-height: 1100px) {
+    .about-us__section {
+      height: 100%; } }
+  @media screen and (max-height: 500px) {
+    .about-us__section {
+      height: 100%; } }
+  @media screen and (max-width: 570px) {
+    .about-us__section {
+      height: 100%; } }
+  .about-us__section .about-us__content {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 850px) {
+      .about-us__section .about-us__content {
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media screen and (max-width: 570px) {
+      .about-us__section .about-us__content {
+        flex-wrap: wrap;
+        justify-content: center; } }
+    .about-us__section .about-us__content .about-us__img {
+      margin-top: 20px; }
+      @media screen and (max-width: 850px) {
+        .about-us__section .about-us__content .about-us__img {
+          margin-right: 20px; } }
+      @media screen and (max-width: 570px) {
+        .about-us__section .about-us__content .about-us__img {
+          order: 2;
+          margin-right: 0; } }
+    @media screen and (max-width: 570px) {
+      .about-us__section .about-us__content .about-us__title {
+        order: 1; } }
+    .about-us__section .about-us__content .about-us__title h1 {
+      font-size: 80px;
+      font-family: 'Damion', cursive; }
+    .about-us__section .about-us__content .about-us__title .about-us__p {
+      max-width: 500px;
+      font-size: 18px; }
+  .about-us__section .about-us__list {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0; }
+    .about-us__section .about-us__list ol {
+      margin-left: 63px;
+      list-style-type: none;
+      counter-reset: li; }
+      @media screen and (max-width: 570px) {
+        .about-us__section .about-us__list ol {
+          margin-left: 20px; } }
+      .about-us__section .about-us__list ol li {
+        margin-bottom: 10px; }
+      .about-us__section .about-us__list ol li:before {
+        content: counter(li);
+        counter-increment: li 1;
+        padding: 0 6px;
+        margin-top: 2px;
+        margin-left: -28px;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        background: #e64c65; }
+  .about-us__section .about-us__need-now {
+    display: flex; }
+    .about-us__section .about-us__need-now .need-now__title h2 {
+      font-size: 66px;
+      font-family: 'Damion', cursive;
+      text-align: left;
+      margin-top: 20px; }
+      @media screen and (max-width: 570px) {
+        .about-us__section .about-us__need-now .need-now__title h2 {
+          text-align: center; } }
+    .about-us__section .about-us__need-now .need-now__title p {
+      margin-bottom: 20px;
+      text-align: left; }
+      @media screen and (max-width: 570px) {
+        .about-us__section .about-us__need-now .need-now__title p {
+          text-align: center; } }
+    .about-us__section .about-us__need-now .need-now__img {
+      width: 50%; }
+      @media screen and (max-width: 1025px) {
+        .about-us__section .about-us__need-now .need-now__img {
+          width: 100%;
+          margin-top: 60px; }
+          .about-us__section .about-us__need-now .need-now__img img {
+            width: 100%; } }
+      @media screen and (max-width: 570px) {
+        .about-us__section .about-us__need-now .need-now__img {
+          display: none; } }
+
+/*# sourceMappingURL=style__about-us.css.map */

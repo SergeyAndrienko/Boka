@@ -1,0 +1,207 @@
+@import "Mixins.scss";
+
+.content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  @include max-screen(1025px) {
+
+    margin-top: 12%;
+    position: relative;
+    flex-direction: column;
+  }
+
+  @include max-screen-height(500px) {
+    height: 100%;
+  }
+  @include max-screen(570px) {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  .content__img {
+    @include max-screen(1025px) {
+
+order: 2;
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 800px;
+    }@include max-screen(1025px) {
+           flex-wrap: wrap;
+           position: relative;
+         }
+    @include max-screen(850px) {
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    @include max-screen(570px) {
+      margin-bottom: 30px;
+
+    }
+
+    .img__first {
+      position: relative;
+      @include max-screen(1025px) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 80px;
+        img {
+          width: 100% !important;
+          display: block;
+        }
+      }
+      @include max-screen(570px){
+        width: 75%!important;
+      }
+      @include max-screen(550px){
+        width: 100%!important;
+      }
+    }
+
+    .img__second {
+      position: absolute;
+      top: 422px;
+      left: 266px;
+      @include max-screen(1025px) {
+        display: inline-block;
+        position: absolute;
+        top: 257px;
+        left: 124px;
+        img {
+          width: 100% !important;
+          display: block;
+        }
+      }
+      @include max-screen(850px) {
+
+      }
+      @include max-screen(570px) {
+        position: absolute;
+        top: 181px;
+        left: 195px;
+
+      }
+      @include max-screen(550px) {
+        position: static;
+        display: none;
+      }
+    }
+  }
+
+
+  .content__title {
+
+    color: $color;
+    text-align: center;
+    @include max-screen(1025px) {
+
+
+      order: 1;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-family: 'Damion', cursive;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-top: 70px;
+      @include max-screen(1025px) {
+        font-size: 80px;
+
+      }
+      @include max-screen(570px) {
+        margin-top: 20px;
+        font-size: 55px;
+
+      }
+      @include max-screen(550px) {
+        margin-top: 20px;
+
+      }
+
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: 'Muli', sans-serif;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin-top: 35px;
+      @include max-screen(570px) {
+        font-size: 20px;
+
+      }
+      @include max-screen(550px) {
+        font-size: 30px;
+
+      }
+
+    }
+
+    .title__btn {
+      border: 1px solid $color;
+      width: 265px;
+      margin: 70px auto 95px;
+      border-radius: 10px;
+      padding: 20px 0;
+      cursor: pointer;
+      transition: all linear 0.5s;
+      -webkit-transition: all linear 0.5s;
+      -moz-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s;
+      @include max-screen(1025px) {
+        width: 300px;
+      }
+      @include max-screen(570px) {
+        width: 100%;
+        padding: 12px 0;
+        margin: 30px auto 50px;
+      }
+      @include max-screen(550px) {
+        width: 100%;
+      }
+
+
+      a {
+        color: $color;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: $font_roboto;
+        outline: none;
+        text-decoration: none;
+        font-weight: normal;
+      }
+
+
+    }
+
+    .title__btn:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      background-color: #5f0049;
+
+      a {
+        color: #FFFFFF;
+      }
+
+      @include max-screen(570px) {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+  }
+}
+

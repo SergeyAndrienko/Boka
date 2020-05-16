@@ -1,0 +1,143 @@
+@import "Mixins.scss";
+.about-us__section{
+  max-width: 900px;
+  margin: auto;
+  color: $color;
+  text-align: center;
+  font-family: $font_roboto;
+  padding-top: 30px;
+  @include max-screen(1025px){
+
+    margin-top: 12%;
+    position: relative;
+    display: block;
+    padding: 0 10px;
+  }
+  @include max-screen-height(1370px){
+    height: 100vh;
+  }
+  @include max-screen-height(1100px){
+    height: 100%;
+  }
+  @include max-screen-height(500px){
+    height: 100%;
+  }
+  @include max-screen(570px){
+    height: 100%;
+
+  }
+  .about-us__content{
+    display: flex;
+    justify-content: space-between;
+    @include max-screen(850px){
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+    @include max-screen(570px){
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+    .about-us__img{
+      margin-top: 20px;
+      @include max-screen(850px){
+        margin-right: 20px;
+
+      }
+      @include max-screen(570px){
+       order: 2;
+        margin-right: 0;
+
+      }
+    }
+.about-us__title{
+  @include max-screen(570px){
+    order: 1;
+
+  }
+  h1{
+
+    font-size: 80px;
+    font-family: 'Damion', cursive;
+  }
+  .about-us__p{
+    max-width: 500px;
+    font-size: 18px;
+
+  }
+}
+
+  }
+
+  .about-us__list{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    ol {
+      margin-left: 63px;
+      list-style-type: none;
+      counter-reset: li;
+      @include max-screen(570px){
+        margin-left:20px ;
+
+      }
+      li{
+        margin-bottom: 10px;
+
+      }
+      li:before {
+        content: counter(li);
+        counter-increment: li 1;
+        padding: 0 6px;
+        margin-top: 2px;
+        margin-left: -28px;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        background:#e64c65;
+      }
+    }
+  }
+
+.about-us__need-now{
+  display: flex;
+.need-now__title{
+
+  h2{
+    font-size: 66px;
+    font-family: 'Damion', cursive;
+    text-align: left;
+    margin-top: 20px;
+    @include max-screen(570px){
+      text-align: center;
+    }
+  }
+  p{
+    margin-bottom: 20px;
+    text-align: left;
+    @include max-screen(570px){
+      text-align: center;
+    }
+  }
+}
+  .need-now__img{
+    width: 50%;
+    @include max-screen(1025px){
+      width: 100%;
+      margin-top: 60px;
+      img{
+        width: 100%;
+      }
+
+    }
+    @include max-screen(570px){
+      display: none;
+
+    }
+  }
+}
+
+}

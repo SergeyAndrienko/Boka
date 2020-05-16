@@ -1,0 +1,120 @@
+@import "Mixins.scss";
+
+.sign-in{
+  @include max-screen(1025px){
+    height: 100vh;
+    margin-top: 12%;
+    position: relative;
+    display: block;
+  }
+  @include max-screen-height(1370px){
+    height: 100vh;
+  }
+  @include max-screen-height(500px){
+    height: 100%;
+  }
+  @include max-screen(570px){
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 0 10px;
+  }
+.sign-in__title{
+  margin-top: 50px;
+  color: $color;
+  text-align: center;
+  margin-bottom: 30px;
+font-family: $font_roboto;
+  h1 {
+    font-size: 80px;
+    font-family: 'Damion', cursive;
+    margin-bottom: 20px;
+
+  }
+  @include max-screen(570px){
+   margin: 50px auto 20px;
+
+  }
+}
+  .sign-in__form {
+    max-width: 535px;
+    margin: auto;
+    input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid $color;
+      background: none;
+      outline: none;
+      margin-top: 20px;
+      font-family: $font_roboto;
+      font-size: 17px;
+      color: $color;
+      @include max-screen(550px){
+        width: 100%;
+
+      }
+    }
+
+    label {
+      font-size: 25px;
+      margin-top: 23px;
+      margin-right: 40px;
+      color: $color;
+      font-family: $font_roboto;
+      text-align: left;
+      @include max-screen(550px){
+
+        margin: auto;
+
+      }
+    }
+
+    .form__email-human {
+      display: flex;
+      justify-content: space-between;
+      @include max-screen(550px){
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+      }
+    }
+    .form__password-human {
+      display: flex;
+      justify-content: space-between;
+      @include max-screen(550px){
+        flex-wrap: wrap;
+
+      }
+    }
+
+    .form__sign-in__btn {
+      margin: 30px auto 50px auto;
+      display: block;
+      width: 195px;
+      padding: 12px;
+      border: 1px solid $color;
+      border-radius: 10px;
+      background: none;
+      color: $color;
+      font-family: $font_roboto;
+      font-size: 20px;
+      transition: all linear 0.5s;
+      -webkit-transition: all linear 0.5s;
+      -moz-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s;
+
+    }
+
+    .form__sign-in__btn:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      background-color: #5f0049;
+      color: #FFFFFF;
+    }
+  }
+}
