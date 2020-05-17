@@ -175,16 +175,14 @@ footer {
 
 .support {
   max-width: 625px;
-  margin: auto; }
+  margin: auto;
+  min-height: 100vh; }
   @media screen and (max-width: 1025px) {
     .support {
       height: 100vh;
       margin-top: 12%;
       position: relative;
       display: block; } }
-  @media screen and (max-height: 1370px) {
-    .support {
-      height: 100vh; } }
   @media screen and (max-height: 1100px) {
     .support {
       height: 100%; } }

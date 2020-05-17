@@ -39,14 +39,14 @@
     <form action="#" method="post" name="support" class="support__form">
 <div class="form__name-human">
         <label> Your name</label>
-        <input type="text" name="your-name">
+        <input type="text" name="your-name" required>
 </div>
         <div class="form__email-human"> <label>Your email</label>
             <input type="email" name="email" required>
         </div>
 
         <div class="form__complaint">
-        <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
+        <textarea class="form__textarea" name="message" placeholder="Message" required></textarea>
         </div>
 
         <button type="submit" id="btn_support" name="btn" class="form__suport__btn">

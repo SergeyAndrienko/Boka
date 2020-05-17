@@ -179,16 +179,14 @@ footer {
   color: #1f253d;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  padding-top: 30px; }
+  padding-top: 30px;
+  min-height: 100vh; }
   @media screen and (max-width: 1025px) {
     .about-us__section {
       margin-top: 12%;
       position: relative;
       display: block;
       padding: 0 10px; } }
-  @media screen and (max-height: 1370px) {
-    .about-us__section {
-      height: 100vh; } }
   @media screen and (max-height: 1100px) {
     .about-us__section {
       height: 100%; } }

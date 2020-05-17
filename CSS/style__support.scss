@@ -3,14 +3,12 @@
 .support {
   max-width: 625px;
   margin: auto;
+  min-height: 100vh;
   @include max-screen(1025px){
     height: 100vh;
     margin-top: 12%;
     position: relative;
     display: block;
-  }
-  @include max-screen-height(1370px){
-    height: 100vh;
   }
   @include max-screen-height(1100px){
     height: 100%;

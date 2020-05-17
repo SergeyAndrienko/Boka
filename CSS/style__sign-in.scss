@@ -1,15 +1,14 @@
 @import "Mixins.scss";
 
 .sign-in{
+  min-height: 100vh;
   @include max-screen(1025px){
-    height: 100vh;
+
     margin-top: 12%;
     position: relative;
     display: block;
   }
-  @include max-screen-height(1370px){
-    height: 100vh;
-  }
+
   @include max-screen-height(500px){
     height: 100%;
   }

@@ -173,100 +173,98 @@ footer {
       color: #ea4c89;
       opacity: 70%; }
 
-@media screen and (max-width: 1025px) {
-  .sign-in {
-    height: 100vh;
-    margin-top: 12%;
-    position: relative;
-    display: block; } }
-@media screen and (max-height: 1370px) {
-  .sign-in {
-    height: 100vh; } }
-@media screen and (max-height: 500px) {
-  .sign-in {
-    height: 100%; } }
-@media screen and (max-width: 570px) {
-  .sign-in {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-    padding: 0 10px; } }
-.sign-in .sign-in__title {
-  margin-top: 50px;
-  color: #1f253d;
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: "Roboto", sans-serif; }
-  .sign-in .sign-in__title h1 {
-    font-size: 80px;
-    font-family: 'Damion', cursive;
-    margin-bottom: 20px; }
+.sign-in {
+  min-height: 100vh; }
+  @media screen and (max-width: 1025px) {
+    .sign-in {
+      margin-top: 12%;
+      position: relative;
+      display: block; } }
+  @media screen and (max-height: 500px) {
+    .sign-in {
+      height: 100%; } }
   @media screen and (max-width: 570px) {
-    .sign-in .sign-in__title {
-      margin: 50px auto 20px; } }
-.sign-in .sign-in__form {
-  max-width: 535px;
-  margin: auto; }
-  .sign-in .sign-in__form input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #1f253d;
-    background: none;
-    outline: none;
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    color: #1f253d; }
-    @media screen and (max-width: 550px) {
-      .sign-in .sign-in__form input {
-        width: 100%; } }
-  .sign-in .sign-in__form label {
-    font-size: 25px;
-    margin-top: 23px;
-    margin-right: 40px;
+    .sign-in {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+      padding: 0 10px; } }
+  .sign-in .sign-in__title {
+    margin-top: 50px;
     color: #1f253d;
-    font-family: "Roboto", sans-serif;
-    text-align: left; }
-    @media screen and (max-width: 550px) {
-      .sign-in .sign-in__form label {
-        margin: auto; } }
-  .sign-in .sign-in__form .form__email-human {
-    display: flex;
-    justify-content: space-between; }
-    @media screen and (max-width: 550px) {
-      .sign-in .sign-in__form .form__email-human {
-        flex-wrap: wrap;
-        margin-bottom: 20px; } }
-  .sign-in .sign-in__form .form__password-human {
-    display: flex;
-    justify-content: space-between; }
-    @media screen and (max-width: 550px) {
-      .sign-in .sign-in__form .form__password-human {
-        flex-wrap: wrap; } }
-  .sign-in .sign-in__form .form__sign-in__btn {
-    margin: 30px auto 50px auto;
-    display: block;
-    width: 195px;
-    padding: 12px;
-    border: 1px solid #1f253d;
-    border-radius: 10px;
-    background: none;
-    color: #1f253d;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    transition: all linear 0.5s;
-    -webkit-transition: all linear 0.5s;
-    -moz-transition: all linear 0.5s;
-    -o-transition: all linear 0.5s; }
-  .sign-in .sign-in__form .form__sign-in__btn:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-    background-color: #5f0049;
-    color: #FFFFFF; }
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif; }
+    .sign-in .sign-in__title h1 {
+      font-size: 80px;
+      font-family: 'Damion', cursive;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 570px) {
+      .sign-in .sign-in__title {
+        margin: 50px auto 20px; } }
+  .sign-in .sign-in__form {
+    max-width: 535px;
+    margin: auto; }
+    .sign-in .sign-in__form input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #1f253d;
+      background: none;
+      outline: none;
+      margin-top: 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 17px;
+      color: #1f253d; }
+      @media screen and (max-width: 550px) {
+        .sign-in .sign-in__form input {
+          width: 100%; } }
+    .sign-in .sign-in__form label {
+      font-size: 25px;
+      margin-top: 23px;
+      margin-right: 40px;
+      color: #1f253d;
+      font-family: "Roboto", sans-serif;
+      text-align: left; }
+      @media screen and (max-width: 550px) {
+        .sign-in .sign-in__form label {
+          margin: auto; } }
+    .sign-in .sign-in__form .form__email-human {
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 550px) {
+        .sign-in .sign-in__form .form__email-human {
+          flex-wrap: wrap;
+          margin-bottom: 20px; } }
+    .sign-in .sign-in__form .form__password-human {
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 550px) {
+        .sign-in .sign-in__form .form__password-human {
+          flex-wrap: wrap; } }
+    .sign-in .sign-in__form .form__sign-in__btn {
+      margin: 30px auto 50px auto;
+      display: block;
+      width: 195px;
+      padding: 12px;
+      border: 1px solid #1f253d;
+      border-radius: 10px;
+      background: none;
+      color: #1f253d;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      transition: all linear 0.5s;
+      -webkit-transition: all linear 0.5s;
+      -moz-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s; }
+    .sign-in .sign-in__form .form__sign-in__btn:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      background-color: #5f0049;
+      color: #FFFFFF; }
 
 /*# sourceMappingURL=style__sign-in.css.map */
