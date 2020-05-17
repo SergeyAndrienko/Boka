@@ -254,6 +254,7 @@ footer {
       color: #1f253d;
       font-family: "Roboto", sans-serif;
       font-size: 20px;
+      cursor: pointer;
       transition: all linear 0.5s;
       -webkit-transition: all linear 0.5s;
       -moz-transition: all linear 0.5s;
