@@ -187,7 +187,7 @@ footer {
     .sign-in {
       height: 100%;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       margin-top: 0;
       padding: 0 10px; } }
   .sign-in .sign-in__title {
@@ -206,6 +206,9 @@ footer {
   .sign-in .sign-in__form {
     max-width: 535px;
     margin: auto; }
+    @media screen and (max-width: 550px) {
+      .sign-in .sign-in__form {
+        margin: 40px auto; } }
     .sign-in .sign-in__form input {
       width: 300px;
       padding: 10px;
