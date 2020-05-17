@@ -27,15 +27,16 @@
     position: relative;
     @include max-screen(1025px) {
 
-order: 2;
+      order: 2;
       display: flex;
       justify-content: space-around;
       margin: auto;
       max-width: 800px;
-    }@include max-screen(1025px) {
-           flex-wrap: wrap;
-           position: relative;
-         }
+    }
+    @include max-screen(1025px) {
+      flex-wrap: wrap;
+      position: relative;
+    }
     @include max-screen(850px) {
       padding-left: 10px;
       padding-right: 10px;
@@ -58,11 +59,11 @@ order: 2;
           display: block;
         }
       }
-      @include max-screen(570px){
-        width: 75%!important;
+      @include max-screen(570px) {
+        width: 75% !important;
       }
-      @include max-screen(550px){
-        width: 100%!important;
+      @include max-screen(550px) {
+        width: 100% !important;
       }
     }
 

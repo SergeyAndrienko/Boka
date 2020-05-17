@@ -13,7 +13,7 @@
 @import url('../fontawesome-free-5.13.0-web/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Damion&family=Muli:ital,wght@0,300;1,300&family=Roboto&display=swap');
 $color: #1f253d;
-$font_roboto:'Roboto', sans-serif;
+$font_roboto: 'Roboto', sans-serif;
 
 * {
   padding: 0;
@@ -38,25 +38,26 @@ header {
   justify-content: space-around;
   margin: auto;
 
-  #menu__toggle{
+  #menu__toggle {
     opacity: 0;
   }
 
-  @include max-screen(570px){
+  @include max-screen(570px) {
     justify-content: space-between;
     padding: 28px;
   }
 
-  .header__logo{
-    img{
+  .header__logo {
+    img {
       width: 100%;
     }
-    @include max-screen(570px){
-      a{
+
+    @include max-screen(570px) {
+      a {
         padding: 0;
       }
-      img{
-        width: 70%!important;
+      img {
+        width: 70% !important;
       }
     }
   }
@@ -67,7 +68,7 @@ header {
 
     .navbar__list {
       margin-top: 35px;
-      @include max-screen(570px){
+      @include max-screen(570px) {
         margin-top: 0;
       }
 
@@ -108,9 +109,8 @@ header {
       }
     }
   }
+
   @include max-screen(570px) {
-
-
 
 
     #menu__toggle:checked ~ .menu__btn > .burger {
@@ -173,10 +173,10 @@ header {
       visibility: hidden;
       top: 0;
       right: 100%;
-z-index: 10;
+      z-index: 10;
       width: 100%;
       height: 100%;
-text-align: center;
+      text-align: center;
       margin: 0;
       padding: 80px 14px;
 
@@ -216,7 +216,7 @@ footer {
   .footer__container {
     display: flex;
     justify-content: space-around;
-    @include max-screen(570px){
+    @include max-screen(570px) {
       flex-wrap: wrap;
       text-align: center;
       justify-content: center;
@@ -230,11 +230,12 @@ footer {
         font-weight: normal;
         opacity: 70%;
       }
-      @include max-screen(590px){
+
+      @include max-screen(590px) {
         margin-bottom: 20px;
         margin-right: 40px;
       }
-      @include max-screen(550px){
+      @include max-screen(550px) {
 
         margin-right: 0;
       }
@@ -250,22 +251,26 @@ footer {
         margin-left: 15px;
 
       }
-      a:nth-child(1){
-        @include max-screen(570px){
+
+      a:nth-child(1) {
+        @include max-screen(570px) {
           margin-left: 0;
         }
 
       }
-      a:nth-child(1):hover{
+
+      a:nth-child(1):hover {
         color: #4267B2;
         opacity: 70%;
 
       }
-      a:nth-child(2):hover{
+
+      a:nth-child(2):hover {
         color: #00a0d0;
         opacity: 70%;
       }
-      a:nth-child(3):hover{
+
+      a:nth-child(3):hover {
         color: #ea4c89;
         opacity: 70%;
       }

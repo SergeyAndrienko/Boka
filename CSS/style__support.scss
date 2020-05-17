@@ -4,19 +4,19 @@
   max-width: 625px;
   margin: auto;
   min-height: 100vh;
-  @include max-screen(1025px){
+  @include max-screen(1025px) {
     height: 100vh;
     margin-top: 12%;
     position: relative;
     display: block;
   }
-  @include max-screen-height(1100px){
+  @include max-screen-height(1100px) {
     height: 100%;
   }
-  @include max-screen-height(500px){
+  @include max-screen-height(500px) {
     height: 100%;
   }
-  @include max-screen(570px){
+  @include max-screen(570px) {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -43,11 +43,12 @@
   }
 
   .support__form {
-    @include max-screen(570px){
+    @include max-screen(570px) {
       margin: auto;
       width: 100%;
 
     }
+
     input {
       width: 300px;
       padding: 10px;
@@ -59,7 +60,7 @@
       font-family: $font_roboto;
       font-size: 17px;
       color: $color;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         width: 100%;
 
       }
@@ -71,7 +72,7 @@
       margin-right: 40px;
       color: $color;
       font-family: $font_roboto;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         margin-right: 0;
 
       }
@@ -80,7 +81,7 @@
     .form__name-human {
       display: flex;
       justify-content: center;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         flex-wrap: wrap;
 
       }
@@ -89,23 +90,25 @@
     .form__email-human {
       display: flex;
       justify-content: center;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         flex-wrap: wrap;
 
       }
     }
-    .form__complaint{
+
+    .form__complaint {
       margin: 30px auto;
       display: block;
-      @include max-screen(550px){
+      @include max-screen(550px) {
 
         display: flex;
         margin: 40px auto;
 
       }
-     .form__textarea {
-       margin: auto;
-       display: block;
+
+      .form__textarea {
+        margin: auto;
+        display: block;
         width: 400px;
         resize: none;
         background: none;
@@ -117,13 +120,14 @@
         color: $color;
         font-family: $font_roboto;
         font-size: 17px;
-        @include max-screen(550px){
+        @include max-screen(550px) {
           width: 100%;
 
         }
       }
     }
-    .form__suport__btn{
+
+    .form__suport__btn {
       margin: 0 auto 50px auto;
       display: block;
       width: 195px;
@@ -137,15 +141,16 @@
       cursor: pointer;
       transition: all linear 0.5s;
       -webkit-transition: all linear 0.5s;
-      -moz-transition:all linear 0.5s;
-      -o-transition:all linear 0.5s ;
+      -moz-transition: all linear 0.5s;
+      -o-transition: all linear 0.5s;
 
     }
-    .form__suport__btn:hover{
+
+    .form__suport__btn:hover {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
-      -moz-transform:scale(1.2) ;
-      -o-transform:scale(1.2) ;
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
       transform: scale(1.2);
       background-color: #5f0049;
       color: #FFFFFF;

@@ -9,7 +9,7 @@
     position: relative;
     display: block;
   }
-  @include max-screen-height(1100px){
+  @include max-screen-height(1100px) {
     height: 100%;
   }
   @include max-screen-height(500px) {
@@ -269,6 +269,7 @@
         }
       }
     }
+
     .your-name {
       display: flex;
       margin-top: 30px;
@@ -327,7 +328,7 @@
       }
     }
 
-    .your-birth{
+    .your-birth {
       display: flex;
       margin-top: 30px;
       @include max-screen(550px) {
@@ -360,6 +361,7 @@
           font-size: 28px;
         }
       }
+
       input {
         width: 393px;
         margin-left: 50px;
@@ -381,19 +383,23 @@
           width: 86%;
         }
       }
-      span{
+
+      span {
         width: 20px;
       }
-      input:invalid+span:after {
+
+      input:invalid + span:after {
         content: '✖';
         padding-left: 5px;
 
       }
-      input:valid+span:after {
+
+      input:valid + span:after {
         content: '✓';
         padding-left: 5px;
       }
     }
+
     .email {
       display: flex;
       margin-top: 30px;
@@ -450,15 +456,18 @@
           width: 86%;
         }
       }
-      span{
+
+      span {
         width: 20px;
       }
-      input:invalid+span:after {
+
+      input:invalid + span:after {
         content: '✖';
         padding-left: 5px;
 
       }
-      input:valid+span:after {
+
+      input:valid + span:after {
         content: '✓';
         padding-left: 5px;
       }
@@ -509,7 +518,7 @@
         outline: none;
         padding: 10px;
         @include max-screen(570px) {
-          margin-left:25px;
+          margin-left: 25px;
           margin-right: 8px;
         }
         @include max-screen(550px) {
@@ -519,15 +528,18 @@
 
         }
       }
-      span{
+
+      span {
         width: 20px;
       }
-      input:invalid+span:after {
+
+      input:invalid + span:after {
         content: '✖';
         padding-left: 5px;
 
       }
-      input:valid+span:after {
+
+      input:valid + span:after {
         content: '✓';
         padding-left: 5px;
       }

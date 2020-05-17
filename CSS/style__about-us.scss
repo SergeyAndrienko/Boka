@@ -1,5 +1,6 @@
 @import "Mixins.scss";
-.about-us__section{
+
+.about-us__section {
   max-width: 900px;
   margin: auto;
   color: $color;
@@ -8,67 +9,72 @@
   padding-top: 30px;
   min-height: 100vh;
 
-  @include max-screen(1025px){
+  @include max-screen(1025px) {
 
     margin-top: 12%;
     position: relative;
     display: block;
     padding: 0 10px;
   }
-  @include max-screen-height(1100px){
+  @include max-screen-height(1100px) {
     height: 100%;
   }
-  @include max-screen-height(500px){
+  @include max-screen-height(500px) {
     height: 100%;
   }
-  @include max-screen(570px){
+  @include max-screen(570px) {
     height: 100%;
 
   }
-  .about-us__content{
+
+  .about-us__content {
     display: flex;
     justify-content: space-between;
-    @include max-screen(850px){
+    @include max-screen(850px) {
       padding-left: 10px;
       padding-right: 10px;
 
     }
-    @include max-screen(570px){
+    @include max-screen(570px) {
       flex-wrap: wrap;
       justify-content: center;
 
     }
-    .about-us__img{
+
+    .about-us__img {
       margin-top: 20px;
-      @include max-screen(850px){
+      @include max-screen(850px) {
         margin-right: 20px;
 
       }
-      @include max-screen(570px){
-       order: 2;
+      @include max-screen(570px) {
+        order: 2;
         margin-right: 0;
 
       }
     }
-.about-us__title{
-  @include max-screen(570px){
-    order: 1;
+
+    .about-us__title {
+      @include max-screen(570px) {
+        order: 1;
+
+      }
+
+      h1 {
+        font-size: 80px;
+        font-family: 'Damion', cursive;
+      }
+
+      .about-us__p {
+        max-width: 500px;
+        font-size: 18px;
+
+      }
+    }
 
   }
-  h1{
-    font-size: 80px;
-    font-family: 'Damion', cursive;
-  }
-  .about-us__p{
-    max-width: 500px;
-    font-size: 18px;
 
-  }
-}
-
-  }
-
-  .about-us__list{
+  .about-us__list {
     display: flex;
     justify-content: center;
     margin: 50px 0;
@@ -77,14 +83,16 @@
       margin-left: 63px;
       list-style-type: none;
       counter-reset: li;
-      @include max-screen(570px){
-        margin-left:20px ;
+      @include max-screen(570px) {
+        margin-left: 20px;
 
       }
-      li{
+
+      li {
         margin-bottom: 10px;
 
       }
+
       li:before {
         content: counter(li);
         counter-increment: li 1;
@@ -95,47 +103,50 @@
         text-align: center;
         color: white;
         position: absolute;
-        background:#e64c65;
+        background: #e64c65;
       }
     }
   }
 
-.about-us__need-now{
-  display: flex;
-.need-now__title{
+  .about-us__need-now {
+    display: flex;
 
-  h2{
-    font-size: 66px;
-    font-family: 'Damion', cursive;
-    text-align: left;
-    margin-top: 20px;
-    @include max-screen(570px){
-      text-align: center;
+    .need-now__title {
+
+      h2 {
+        font-size: 66px;
+        font-family: 'Damion', cursive;
+        text-align: left;
+        margin-top: 20px;
+        @include max-screen(570px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+        text-align: left;
+        @include max-screen(570px) {
+          text-align: center;
+        }
+      }
     }
-  }
-  p{
-    margin-bottom: 20px;
-    text-align: left;
-    @include max-screen(570px){
-      text-align: center;
-    }
-  }
-}
-  .need-now__img{
-    width: 50%;
-    @include max-screen(1025px){
-      width: 100%;
-      margin-top: 60px;
-      img{
+
+    .need-now__img {
+      width: 50%;
+      @include max-screen(1025px) {
         width: 100%;
+        margin-top: 60px;
+        img {
+          width: 100%;
+        }
+
       }
+      @include max-screen(570px) {
+        display: none;
 
-    }
-    @include max-screen(570px){
-      display: none;
-
+      }
     }
   }
-}
 
 }

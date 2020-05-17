@@ -1,48 +1,53 @@
 @import "Mixins.scss";
 
-.sign-in{
+.sign-in {
   min-height: 100vh;
-  @include max-screen(1025px){
+  @include max-screen(1025px) {
 
     margin-top: 12%;
     position: relative;
     display: block;
   }
 
-  @include max-screen-height(500px){
+  @include max-screen-height(500px) {
     height: 100%;
   }
-  @include max-screen(570px){
+  @include max-screen(570px) {
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 0;
     padding: 0 10px;
   }
-.sign-in__title{
-  margin-top: 50px;
-  color: $color;
-  text-align: center;
-  margin-bottom: 30px;
-font-family: $font_roboto;
-  h1 {
-    font-size: 80px;
-    font-family: 'Damion', cursive;
-    margin-bottom: 20px;
 
-  }
-  @include max-screen(570px){
-   margin: 50px auto 20px;
+  .sign-in__title {
+    margin-top: 50px;
+    color: $color;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: $font_roboto;
 
+    h1 {
+      font-size: 80px;
+      font-family: 'Damion', cursive;
+      margin-bottom: 20px;
+
+    }
+
+    @include max-screen(570px) {
+      margin: 50px auto 20px;
+
+    }
   }
-}
+
   .sign-in__form {
     max-width: 535px;
     margin: auto;
-    @include max-screen(550px){
+    @include max-screen(550px) {
       margin: 40px auto;
 
     }
+
     input {
       width: 300px;
       padding: 10px;
@@ -54,7 +59,7 @@ font-family: $font_roboto;
       font-family: $font_roboto;
       font-size: 17px;
       color: $color;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         width: 100%;
 
       }
@@ -67,7 +72,7 @@ font-family: $font_roboto;
       color: $color;
       font-family: $font_roboto;
       text-align: left;
-      @include max-screen(550px){
+      @include max-screen(550px) {
 
         margin: auto;
 
@@ -77,16 +82,17 @@ font-family: $font_roboto;
     .form__email-human {
       display: flex;
       justify-content: space-between;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         flex-wrap: wrap;
         margin-bottom: 20px;
 
       }
     }
+
     .form__password-human {
       display: flex;
       justify-content: space-between;
-      @include max-screen(550px){
+      @include max-screen(550px) {
         flex-wrap: wrap;
 
       }
