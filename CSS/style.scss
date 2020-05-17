@@ -6,11 +6,13 @@
   justify-content: space-around;
   @include max-screen(1025px) {
 
-    margin-top: 12%;
+
     position: relative;
     flex-direction: column;
   }
-
+  @include max-screen-height(1370px){
+    height: 100vh;
+  }
   @include max-screen-height(500px) {
     height: 100%;
   }

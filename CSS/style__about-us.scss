@@ -6,6 +6,9 @@
   text-align: center;
   font-family: $font_roboto;
   padding-top: 30px;
+  h1{
+
+  }
   @include max-screen(1025px){
 
     margin-top: 12%;
@@ -57,7 +60,6 @@
 
   }
   h1{
-
     font-size: 80px;
     font-family: 'Damion', cursive;
   }

@@ -22,42 +22,46 @@ header {
     header {
       justify-content: space-between;
       padding: 28px; } }
+  header .header__logo img {
+    width: 100%; }
   @media screen and (max-width: 570px) {
     header .header__logo a {
       padding: 0; }
     header .header__logo img {
       width: 70% !important; } }
-  header .header__navbar .navbar__list {
-    margin-top: 35px; }
-    @media screen and (max-width: 570px) {
-      header .header__navbar .navbar__list {
-        margin-top: 0; } }
-    header .header__navbar .navbar__list .navbar__item {
-      display: inline-block;
-      position: relative;
-      margin-left: 30px; }
-      header .header__navbar .navbar__list .navbar__item a {
-        color: #FFFFFF;
-        outline: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: "Roboto", sans-serif; }
-      header .header__navbar .navbar__list .navbar__item a:after {
-        content: "";
+  header .header__navbar {
+    list-style-type: none; }
+    header .header__navbar .navbar__list {
+      margin-top: 35px; }
+      @media screen and (max-width: 570px) {
+        header .header__navbar .navbar__list {
+          margin-top: 0; } }
+      header .header__navbar .navbar__list .navbar__item {
         display: inline-block;
-        width: 0;
-        height: 2px;
-        position: absolute;
-        top: 30px;
-        left: 1px;
-        background-color: #e64c65;
-        border: none;
-        transition: 0.3s; }
-    header .header__navbar .navbar__list .navbar__item:hover a:after {
-      width: 100%; }
-      @media screen and (max-width: 1025px) {
-        header .header__navbar .navbar__list .navbar__item:hover a:after {
-          width: 0; } }
+        position: relative;
+        margin-left: 30px; }
+        header .header__navbar .navbar__list .navbar__item a {
+          color: #FFFFFF;
+          outline: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Roboto", sans-serif; }
+        header .header__navbar .navbar__list .navbar__item a:after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 2px;
+          position: absolute;
+          top: 30px;
+          left: 1px;
+          background-color: #e64c65;
+          border: none;
+          transition: 0.3s; }
+      header .header__navbar .navbar__list .navbar__item:hover a:after {
+        width: 100%; }
+        @media screen and (max-width: 1025px) {
+          header .header__navbar .navbar__list .navbar__item:hover a:after {
+            width: 0; } }
   @media screen and (max-width: 570px) {
     header #menu__toggle:checked ~ .menu__btn > .burger {
       transform: rotate(45deg); }

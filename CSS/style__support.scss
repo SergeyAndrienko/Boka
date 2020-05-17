@@ -105,7 +105,9 @@
         margin: 10px auto;
 
       }
-      textarea{
+     .form__textarea {
+       margin: auto;
+       display: block;
         width: 400px;
         resize: none;
         background: none;
